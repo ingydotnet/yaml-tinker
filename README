@@ -1,1 +1,9 @@
 Tinker Site for YAML
+====================
+
+Run these commands:
+
+    > cpanm Tinker
+    > tinker update
+    > tinker make
+    > tinker start
