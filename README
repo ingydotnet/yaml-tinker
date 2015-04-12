@@ -7,3 +7,4 @@ Run these commands:
     > tinker update
     > tinker make
     > tinker start
+    > $BROWSER http://0:1234
