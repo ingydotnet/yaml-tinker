@@ -1,6 +1,41 @@
 # Required:
 app_class: Tinker
 site_name: Tinker with YAML
+html_title: Tinker with YAML
 
 # Options:
 server_port: 1234
+
+layout:
+  style: table_layout
+  head:
+    logo: YAML.png
+    button:
+    - name: save
+      label: Save
+      method: test_save
+  cols:
+  - - pane:
+        name: yaml_input
+        type: input
+        title: YAML Input
+        button:
+        - name: test
+          label: Test
+          method: test_yaml
+  - - pane:
+        name: yaml_pm
+        type: output
+        title: YAML.pm Load Result
+    - pane:
+        name: yaml_tiny
+        type: output
+        title: YAML::Tiny Load Result
+  - - pane:
+        name: yaml_xs
+        type: output
+        title: YAML::XS Load Result
+    - pane:
+        name: yaml_syck
+        type: output
+        title: YAML::Syck Load Result
