@@ -3,8 +3,8 @@ Tinker Site for YAML
 
 Run these commands:
 
-    > cpanm Tinker
+    > cpanm Tinker::App::YAMLTesting
     > tinker update
     > tinker make
     > tinker start
-    > $BROWSER http://0:1234
+    > $BROWSER http://0:7777

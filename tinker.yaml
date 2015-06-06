@@ -1,41 +1,37 @@
-# Required:
-app_class: Tinker
-site_name: Tinker with YAML
-html_title: Tinker with YAML
+app:
+  app_class: Tinker::App::YAMLTesting
 
-# Options:
-server_port: 1234
+server:
+  host: localhost
+  port: 7777
+
+site:
+  title: Tinker with YAML
+
+pane:
+- name: yaml-input-pane
+  type: input
+  auto: false
+  call: multi_loader
+- name: pm-output-pane
+  type: output
+- name: tiny-output-pane
+  type: output
+- name: xs-output-pane
+  type: output
+- name: syck-output-pane
+  type: output
+
+plugin:
+- ace-editor
+- sunshine-theme.yaml
 
 layout:
-  style: table_layout
-  head:
-    logo: YAML.png
-    button:
-    - name: save
-      label: Save
-      method: test_save
-  cols:
-  - - pane:
-        name: yaml_input
-        type: input
-        title: YAML Input
-        button:
-        - name: test
-          label: Test
-          method: test_yaml
-  - - pane:
-        name: yaml_pm
-        type: output
-        title: YAML.pm Load Result
-    - pane:
-        name: yaml_tiny
-        type: output
-        title: YAML::Tiny Load Result
-  - - pane:
-        name: yaml_xs
-        type: output
-        title: YAML::XS Load Result
-    - pane:
-        name: yaml_syck
-        type: output
-        title: YAML::Syck Load Result
+  name: 3col
+  pane:
+    input: yaml-input-pane
+    output:
+    - pm-output-pane
+    - tiny-output-pane
+    - xs-output-pane
+    - syck-output-pane

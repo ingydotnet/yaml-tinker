@@ -1,0 +1,21 @@
+- `cog update` should print format:
+    Cog       → template/login-navigation.html
+    Tinker    → template/main.html
+    local     → template/pane.html
+
+- Config file:
+  -f config.yaml
+  $TINKER_CONFIG_FILE
+  tinker.{yaml,json,etc}
+  .tinker.yaml
+  .tinker/tinker.yaml
+
+- Demos
+  - Run on gh-pages
+
+- Release to CPAN
+  - Cog
+  - Tinker
+  - Tinker::App::YAMLTesting
+
+- Write YAPC presentation
