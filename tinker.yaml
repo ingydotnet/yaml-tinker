@@ -9,17 +9,23 @@ site:
   title: Tinker with YAML
 
 pane:
-- name: yaml-input-pane
+# - title: YAML Input
+- title: YAML Input
+  name: yaml-input-pane
   type: input
   auto: false
   call: multi_loader
-- name: pm-output-pane
+- title: YAML.pm Load Result
+  name: pm-output-pane
   type: output
-- name: tiny-output-pane
+- title: YAML::Tiny Load Result
+  name: tiny-output-pane
   type: output
-- name: xs-output-pane
+- title: YAML::XS Load Result
+  name: xs-output-pane
   type: output
-- name: syck-output-pane
+- title: YAML::Syck Load Result
+  name: syck-output-pane
   type: output
 
 plugin:
